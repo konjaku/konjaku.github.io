@@ -19,11 +19,47 @@ p {
   overflow-y: auto;
 }
 
-/* .md-sidebar {
+.md-sidebar {
   max-height: calc(100vh - var(--md-top-app-bar-height));
-  overflow-y: auto;
-} */
+  /* overflow-y: auto; */
+  background-color: transparent !important;
+}
 
+.md-nav {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  backdrop-filter: blur(30px);
+  border-radius: 6px;
+  padding: 0px;
+}
+
+/* 暗色模式下的侧边栏导航项样式 */
+[data-md-color-scheme="slate"] .md-nav {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* 1. 确保 html 和 body 满屏高度 */
+html, body {
+  height: 100%;                       /* 兼容所有浏览器，确保根元素撑满视口 */ 
+  margin: 0;                          /* 去掉默认外边距 */ 
+}
+
+/* 2. 使用 ::before 伪元素承载背景图 */
+body::before {
+  content: "";                        /* 启用伪元素 */ 
+  position: fixed;                    /* 固定在视口 */ 
+  top: 0; left: 0;                    /* 从左上角开始 */ 
+  width: 100%; height: 100%;          /* 覆盖整个视口 */ 
+  background-image: url("../images/hero-bg.png"); /* 背景图，路径相对于 docs/ */ 
+  background-repeat: no-repeat;       /* 不重复 */ 
+  background-position: center;        /* 居中 */ 
+  background-size: cover;             /* 等比拉伸铺满整个容器  [oai_citation:6‡CSS-Tricks](https://css-tricks.com/perfect-full-page-background-image/?utm_source=chatgpt.com) */ 
+  opacity: 0.12;                      /* 仅背景透明度  [oai_citation:7‡DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-change-a-css-background-images-opacity?utm_source=chatgpt.com) */ 
+  z-index: -1;                        /* 放到所有页面内容的后面 */ 
+  pointer-events: none;               /* 让背景不阻塞鼠标事件 */ 
+}
+
+
+/* 以下配置来自oi-wiki */
 @media (min-width: 1024px) {
   .md-drawer { transform: translateX(0) !important; }
   .md-backdrop { display: none !important; }
@@ -135,3 +171,5 @@ mjx-container > img {
 div.md-typeset__scrollwrap:has(table[data-review-enabled]) {
   overflow: visible;
 }
+
+
