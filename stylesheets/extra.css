@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Menlo';
+  src: local('Menlo');
+}
+.md-typeset code,
+pre code,
+.codehilite {
+  font-family: 'Menlo', 'Monaco', 'Courier New', monospace !important;
+}
+p {
+  text-indent: 2em;
+}
