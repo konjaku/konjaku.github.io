@@ -10,28 +10,26 @@
         <meta name="author" content="konjaku">
       
       
-        <link rel="canonical" href="https://konjaku.github.io/blogs/Solutions/AtCoder/01-ABC388-D%E9%A2%98%E8%A7%A3/">
+        <link rel="canonical" href="https://konjaku.github.io/blogs/Subjects/DP_AtCoder_Educational_DP_Contest/A%E9%A2%98_%E7%AE%80%E5%8D%95/A/">
       
       
-        <link rel="prev" href="../../../%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/">
+        <link rel="prev" href="../../%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/">
       
       
-        <link rel="next" href="../../../Subjects/DP_AtCoder_Educational_DP_Contest/%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/">
       
-      
-      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>ABC388-D Coming of Age Celebration 2025.5.17 - Konjaku's Blogs</title>
+        <title>A题 Frog 1 - Konjaku's Blogs</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,9 +50,9 @@
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     
-      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -80,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#atcoder-beginner-contest-388-d" class="md-skip">
+        <a href="#educational-dp-contest-a-frog-1" class="md-skip">
           跳转至
         </a>
       
@@ -96,7 +94,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../../../.." title="Konjaku&#39;s Blogs" class="md-header__button md-logo" aria-label="Konjaku's Blogs" data-md-component="logo">
+    <a href="../../../../.." title="Konjaku&#39;s Blogs" class="md-header__button md-logo" aria-label="Konjaku's Blogs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
@@ -121,7 +119,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ABC388-D Coming of Age Celebration 2025.5.17
+              A题 Frog 1
             
           </span>
         </div>
@@ -221,7 +219,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../.." class="md-tabs__link">
+      <a href="../../../../.." class="md-tabs__link">
         
   
   
@@ -238,13 +236,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../../%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../../%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/" class="md-tabs__link">
           
   
   
@@ -262,6 +258,8 @@
   
   
   
+    
+  
   
     
     
@@ -269,11 +267,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../Subjects/DP_AtCoder_Educational_DP_Contest/%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/" class="md-tabs__link">
           
   
   
@@ -318,7 +318,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="Konjaku&#39;s Blogs" class="md-nav__button md-logo" aria-label="Konjaku's Blogs" data-md-component="logo">
+    <a href="../../../../.." title="Konjaku&#39;s Blogs" class="md-nav__button md-logo" aria-label="Konjaku's Blogs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
@@ -341,7 +341,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../.." class="md-nav__link">
+      <a href="../../../../.." class="md-nav__link">
         
   
   
@@ -360,10 +360,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -375,22 +373,21 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -403,7 +400,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             题解
@@ -417,7 +414,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/" class="md-nav__link">
+      <a href="../../../../%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/" class="md-nav__link">
         
   
   
@@ -437,12 +434,153 @@
                 
   
   
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    AtCoder题解与收获
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            AtCoder题解与收获
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Solutions/AtCoder/01-ABC388-D%E9%A2%98%E8%A7%A3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ABC388-D Coming of Age Celebration 2025.5.17
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
   
     
     
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    专题
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            专题
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
       
         
       
@@ -462,15 +600,15 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
         
           
-          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="">
             
   
   
   <span class="md-ellipsis">
-    AtCoder题解与收获
+    DP专题_AtCoder
     
   </span>
   
@@ -478,12 +616,35 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_2">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1">
             <span class="md-nav__icon md-icon"></span>
-            AtCoder题解与收获
+            DP专题_AtCoder
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    写在前面
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -506,174 +667,13 @@
   
   
   <span class="md-ellipsis">
-    ABC388-D Coming of Age Celebration 2025.5.17
-    
-  </span>
-  
-
-      </a>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    专题
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            专题
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_1" >
-        
-          
-          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    DP专题_AtCoder
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_1">
-            <span class="md-nav__icon md-icon"></span>
-            DP专题_AtCoder
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../Subjects/DP_AtCoder_Educational_DP_Contest/%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    写在前面
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../Subjects/DP_AtCoder_Educational_DP_Contest/A%E9%A2%98_%E7%AE%80%E5%8D%95/A/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
     A题 Frog 1
     
   </span>
   
 
       </a>
+      
     </li>
   
 
@@ -728,35 +728,45 @@
 
 
 
-<h1 id="atcoder-beginner-contest-388-d">AtCoder Beginner Contest 388 D题<a class="headerlink" href="#atcoder-beginner-contest-388-d" title="Permanent link">&para;</a></h1>
-<p>​   <a href="https://atcoder.jp/contests/abc388/tasks/abc388_d">题目传送门</a></p>
-<p>​   题目大意是说， <span class="arithmatex">\(N\)</span> 个未成年的外星人，每人有 <span class="arithmatex">\(A_i\)</span> 个石头，且从现在开始第 <span class="arithmatex">\(i\)</span> 年就刚好成年。当某个人成年时，其他所有的手里还有石头的成年人都要给他一块石头，问 <span class="arithmatex">\(N\)</span> 年之后每个人手里都有多少块石头。（难度：400分，对应洛谷黄题）</p>
-<p>​   保证： <span class="arithmatex">\( 1 \le N \le 5 \times 10^5 \)</span> ， <span class="arithmatex">\( 0 \le A_i \le 5 \times 10^5 \)</span> ，所有输入都是整数。</p>
-<p>​   直接模拟时间复杂度就是 <span class="arithmatex">\(O(N^2)\)</span> 。观察到每个数的范围都不超过 <span class="arithmatex">\(5 \times 10^5\)</span> ，而且这题是个计数问题，直接按题意去模拟会有大量的性质重复的操作，也就是当第 <span class="arithmatex">\(i\)</span> 个人成年时，前 <span class="arithmatex">\(i - 1\)</span> 个人只要有石头，就必须给他一块。</p>
-<p>​   综上，考虑开一个范围足够的树状数组，统计前 <span class="arithmatex">\(i - 1\)</span> 个人中有多少人手里有大于 <span class="arithmatex">\(0\)</span> 个石头即可。但是这样可能还是要对前 <span class="arithmatex">\(i - 1\)</span> 个人批量操作，所以可以考虑一种变相计数：处理第 <span class="arithmatex">\(i\)</span> 个人时，统计前面 <span class="arithmatex">\(i - 1\)</span> 个人中有多少个人手里石头多于 <span class="arithmatex">\(i - 1\)</span> 个，然后加到第 <span class="arithmatex">\(i\)</span> 个人上。</p>
-<p>​   第 <span class="arithmatex">\(i\)</span> 个人可能还要把手里的部分石头给后面的人，但是可以先不给。这样下来，第 <span class="arithmatex">\(i\)</span> 个人就一共要给出 <span class="arithmatex">\(n - i\)</span> 个石头，但是先欠着，先不给出去，相应的可以把后面人对前面人拥有的石头数量的要求拔高，这样就可以用耗时更少的计数取代普通模拟。</p>
-<p>​   树状数组在本题中的使用方法跟统计数组的逆序对数量相似，在数据范围不大的情况下，下标为 <span class="arithmatex">\(A[i]\)</span> 的元素存储 <span class="arithmatex">\(A[i]\)</span> 的个数 ，注意当某人拥有的石头数量为 <span class="arithmatex">\(0\)</span> 时树状数组会陷入死循环。</p>
-<p>​   AC代码（核心）：</p>
-<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">solve</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<h1 id="educational-dp-contest-a-frog-1">Educational DP Contest A题 Frog 1<a class="headerlink" href="#educational-dp-contest-a-frog-1" title="Permanent link">&para;</a></h1>
+<p><a href="https://atcoder.jp/contests/dp/tasks/dp_a">题目传送门</a></p>
+<p>​   题目大意：</p>
+<p>​   有 <span class="arithmatex">\(N\)</span> 块石头，每块石头的高度为 <span class="arithmatex">\(h_i\)</span> ，从第 <span class="arithmatex">\(i\)</span> 块石头跳到第 <span class="arithmatex">\(i + 1\)</span> 或第 <span class="arithmatex">\(i + 2\)</span> 块石头上的代价分别为 <span class="arithmatex">\(|h_i - h_{i + 1}|\)</span> 和 <span class="arithmatex">\(|h_i - h_{i + 2}|\)</span> ，问从第 <span class="arithmatex">\(1\)</span> 块石头跳到第 <span class="arithmatex">\(n\)</span> 块石头上最小花费多少代价。</p>
+<p>​   限制条件：</p>
+<p>​   <span class="arithmatex">\(2 \le N \le 10^5\)</span>， <span class="arithmatex">\(1 \le h_i \le 10^4\)</span>，所有输入全是整数。</p>
+<p>​   这题很显然需要动态规划，设计一个状态 <span class="arithmatex">\(dp[i]\)</span> 表示跳到第 <span class="arithmatex">\(i\)</span> 块石头的最小代价。若 <span class="arithmatex">\(i\)</span> 以前的转移已经能让 <span class="arithmatex">\(dp[i]\)</span> 成为最小代价了，设 <span class="arithmatex">\(cost(i, j)\)</span> 表示从 <span class="arithmatex">\(i\)</span> 跳到 <span class="arithmatex">\(j\)</span> 花费的代价，现在考虑以下转移：</p>
+<p>​   <span class="arithmatex">\(dp[i] = \min (dp[i - 1] + cost(i - 1, i), dp[i - 2] + cost(i - 2, i))\)</span>，毕竟也只能从 <span class="arithmatex">\(i - 2\)</span> 和 <span class="arithmatex">\(i - 1\)</span> 跳到 <span class="arithmatex">\(i\)</span>。</p>
+<p>​   或者写成 <span class="arithmatex">\(dp\)</span> 数组向后更新的形式：<span class="arithmatex">\(
+\begin{cases}
+​   dp[i + 1] = \min(dp[i + 1], dp[i] + cost(i, i + 1)) \\
+​   dp[i + 2] = \min(dp[i + 2], dp[i] + cost(i, i + 2)) \\
+\end{cases}
+\)</span></p>
+<p>​   第二种写法为什么正确？<span class="arithmatex">\(dp[i]\)</span>只会由更小下标的 <span class="arithmatex">\(dp[j]\)</span> 更新，当遍历到 <span class="arithmatex">\(i\)</span> 时，<span class="arithmatex">\(dp[i]\)</span> 已经达到它所能达到的最小值，最后得到正确答案 <span class="arithmatex">\(dp[N]\)</span> .</p>
+<p>​   AC代码：</p>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;bits/stdc++.h&gt;</span>
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
 
-<span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">N</span><span class="p">;</span><span class="w"> </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">N</span><span class="p">;</span>
-<span class="w">  </span><span class="n">vi</span><span class="w"> </span><span class="n">A</span><span class="p">(</span><span class="n">N</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">5</span><span class="p">);</span>
-<span class="w">  </span><span class="n">For</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">N</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+<span class="k">constexpr</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">N</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100050</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">dp</span><span class="p">[</span><span class="n">N</span><span class="p">],</span><span class="w"> </span><span class="n">h</span><span class="p">[</span><span class="n">N</span><span class="p">];</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">  </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span>
+
+<span class="w">  </span><span class="n">memset</span><span class="p">(</span><span class="n">dp</span><span class="p">,</span><span class="w"> </span><span class="mh">0x3f</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">));</span>
+<span class="w">  </span><span class="n">dp</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">h</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">min</span><span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="w"> </span><span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">abs</span><span class="p">(</span><span class="n">h</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">h</span><span class="p">[</span><span class="n">i</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">]));</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">min</span><span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="w"> </span><span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">abs</span><span class="p">(</span><span class="n">h</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">h</span><span class="p">[</span><span class="n">i</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">2</span><span class="p">]));</span>
 <span class="w">  </span><span class="p">}</span>
 
-<span class="w">  </span><span class="n">FenwickTree</span><span class="w"> </span><span class="n">ft</span><span class="p">(</span><span class="mi">2200050</span><span class="p">);</span>
+<span class="w">  </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">dp</span><span class="p">[</span><span class="n">n</span><span class="p">];</span>
 
-<span class="w">  </span><span class="n">For</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">N</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">ft</span><span class="p">.</span><span class="n">sum</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="mi">2000045</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
-<span class="w">    </span><span class="n">ft</span><span class="p">.</span><span class="n">upd</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
-<span class="w">  </span><span class="p">}</span>
-
-<span class="w">  </span><span class="n">For</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">N</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">max</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="p">(</span><span class="n">N</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">),</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
-<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-<span class="w">  </span><span class="p">}</span>
-
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
 
@@ -796,7 +806,7 @@
       <nav class="md-footer__inner md-grid" aria-label="页脚" >
         
           
-          <a href="../../../%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 写在前面">
+          <a href="../../%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 写在前面">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -811,22 +821,6 @@
             </div>
           </a>
         
-        
-          
-          <a href="../../../Subjects/DP_AtCoder_Educational_DP_Contest/%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/" class="md-footer__link md-footer__link--next" aria-label="下一页: 写在前面">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                下一页
-              </span>
-              <div class="md-ellipsis">
-                写在前面
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
         
       </nav>
     
@@ -855,12 +849,12 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../../..", "features": ["announce.dismiss", "navigation.instant", "header.autohide", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.expand", "navigation.sections", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "search.share", "navigation.indexes", "content.tabs.link", "content.tooltips", "content.code.copy", "content.action.edit", "content.action.view", "content.code.annotate"], "search": "../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../../..", "features": ["announce.dismiss", "navigation.instant", "header.autohide", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.expand", "navigation.sections", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "search.share", "navigation.indexes", "content.tabs.link", "content.tooltips", "content.code.copy", "content.action.edit", "content.action.view", "content.code.annotate"], "search": "../../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
-        <script src="../../../../javascripts/mathjax.js"></script>
+        <script src="../../../../../javascripts/mathjax.js"></script>
       
         <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
       
